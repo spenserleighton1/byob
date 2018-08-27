@@ -4,20 +4,20 @@ const fs = require('fs');
 
 nightmare
   .goto('http://www.dumblaws.com/')
-  .click('.column a')
   .evaluate(() => {
-    const laws = [...document.querySelectorAll('.column_left .lawentry')]
-    const state = document.querySelector('.column .selected_category a').innerText
-    const lawData = laws.map(lawentry => {
-      let law = lawentry.innerText
-      return law      
-    })
-
-    return {[state]: lawData}
+    const links = [...document.querySelectorAll('.column a')]
+    const urls = links.map(link => link.href)
+    return urls
   })
   .end()
   .then(result => {
-    console.log(result)
+    const output = JSON.stringify(result, null, 2)
+    fs.writeFile('./links.json', output, 'utf8', err => {
+      if (err) {
+        return console.log('Error saving file:', err)
+      }
+    })
+    console.log('File saved')
   })
   .catch(err => {
     console.log('Error:', err)
