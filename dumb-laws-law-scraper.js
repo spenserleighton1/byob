@@ -1,14 +1,17 @@
 const Nightmare = require('nightmare');
-const nightmare = Nightmare({ show: true });
 const fs = require('fs');
 const linksToFetch = require('./links.json');
-process.setMaxListeners(0);
 
+async function asyncForEach(array, callback) {
+  for (let index = 0; index < array.length; index++) {
+    await callback(array[index], index, array)
+  }
+}
 
-linksToFetch.forEach(link => {
-  nightmare
+asyncForEach(linksToFetch, async (link) => {
+const nightmare = Nightmare({ show: true });
+  await nightmare
     .goto(link)
-    .wait('body')
     .evaluate(() => {
       const laws = [...document.querySelectorAll('.column_left .lawentry')];
       const state = document.querySelector('.column .selected_category a').innerText;
@@ -16,6 +19,17 @@ linksToFetch.forEach(link => {
         return {[state]: lawData}
     })
     .end()
-    .then(result => console.log(result))
+    .then(result => {
+      const output = JSON.stringify(result, null, 2);
+      fs.appendFile('./state-laws.json', output + ',', 'utf8', err => {
+        if (err) {
+          return console.log('Error saving file:', err)
+        }
+      })
+      console.log('File saved!')
+    })
     .catch(err => console.log(err))
+
 })
+
+
