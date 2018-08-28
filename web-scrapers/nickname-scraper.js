@@ -9,14 +9,14 @@ nightmare
     return states.map(state => {
       let stateSplit = state.innerText.split('\t')
       return {state: stateSplit[0],
-              capitol: stateSplit[1],
+              capital: stateSplit[1],
               nickname: stateSplit[2]}
     })
   })
   .end()
   .then(results => {
     const output = JSON.stringify(results, null, 2)
-    fs.writeFile('../data/nicknames-capitols.json', output, 'utf8', err => {
+    fs.writeFile('../data/nicknames-capitals.json', output, 'utf8', err => {
       if (err) {
         return console.log('Error saving file:', err)
       }

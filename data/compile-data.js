@@ -1,5 +1,4 @@
 const laws = require('./state-laws.json')
-// const nickNames = require('./nicknames-capitols.json')
 const attractions = require('./weirdest-attractions.json')
 const facts= require('./worst-facts.json')
 const foods = require('./worst-foods.json')
@@ -26,4 +25,4 @@ foods.map((food) => {
 
 const stateData =[...foods]
 
-module.exports stateData;
+module.exports = stateData;
