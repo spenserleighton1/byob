@@ -1,0 +1,252 @@
+[
+  {
+    "capitol": "Montgomery",
+    "nickname": "Yellowhammer State",
+    "state": "Alabama"
+  },
+  {
+    "capitol": "Juneau",
+    "nickname": "The Last Frontier",
+    "state": "Alaska"
+  },
+  {
+    "capitol": "Phoenix",
+    "nickname": "The Grand Canyon State",
+    "state": "Arizona"
+  },
+  {
+    "capitol": "Little Rock",
+    "nickname": "The Natural State",
+    "state": "Arkansas"
+  },
+  {
+    "capitol": "Sacramento",
+    "nickname": "The Golden State",
+    "state": "California"
+  },
+  {
+    "capitol": "Denver",
+    "nickname": "The Centennial State",
+    "state": "Colorado"
+  },
+  {
+    "capitol": "Hartford",
+    "nickname": "The Constitution State",
+    "state": "Connecticut"
+  },
+  {
+    "capitol": "Dover",
+    "nickname": "The First State",
+    "state": "Delaware"
+  },
+  {
+    "capitol": "Tallahassee",
+    "nickname": "The Sunshine State",
+    "state": "Florida"
+  },
+  {
+    "capitol": "Atlanta",
+    "nickname": "The Peach State",
+    "state": "Georgia"
+  },
+  {
+    "capitol": "Honolulu",
+    "nickname": "The Aloha State",
+    "state": "Hawaii"
+  },
+  {
+    "capitol": "Boise",
+    "nickname": "The Gem State",
+    "state": "Idaho"
+  },
+  {
+    "capitol": "Springfield",
+    "nickname": "Prairie State",
+    "state": "Illinois"
+  },
+  {
+    "capitol": "Indianapolis",
+    "nickname": "The Hoosier State",
+    "state": "Indiana"
+  },
+  {
+    "capitol": "Des Moines",
+    "nickname": "The Hawkeye State",
+    "state": "Iowa"
+  },
+  {
+    "capitol": "Topeka",
+    "nickname": "The Sunflower State",
+    "state": "Kansas"
+  },
+  {
+    "capitol": "Frankfort",
+    "nickname": "The Bluegrass State",
+    "state": "Kentucky"
+  },
+  {
+    "capitol": "Baton Rouge",
+    "nickname": "The Pelican State",
+    "state": "Louisiana"
+  },
+  {
+    "capitol": "Augusta",
+    "nickname": "The Pine Tree State",
+    "state": "Maine"
+  },
+  {
+    "capitol": "Annapolis",
+    "nickname": "The Old Line State",
+    "state": "Maryland"
+  },
+  {
+    "capitol": "Boston",
+    "nickname": "The Bay State",
+    "state": "Massachusetts"
+  },
+  {
+    "capitol": "Lansing",
+    "nickname": "The Great Lakes State",
+    "state": "Michigan"
+  },
+  {
+    "capitol": "St. Paul",
+    "nickname": "The North Star State",
+    "state": "Minnesota"
+  },
+  {
+    "capitol": "Jackson",
+    "nickname": "The Magnolia State",
+    "state": "Mississippi"
+  },
+  {
+    "capitol": "Jefferson City",
+    "nickname": "The Show Me State",
+    "state": "Missouri"
+  },
+  {
+    "capitol": "Helena",
+    "nickname": "The Treasure State",
+    "state": "Montana"
+  },
+  {
+    "capitol": "Lincoln",
+    "nickname": "The Cornhusker State",
+    "state": "Nebraska"
+  },
+  {
+    "capitol": "Carson City",
+    "nickname": "The Silver State",
+    "state": "Nevada"
+  },
+  {
+    "capitol": "Concord",
+    "nickname": "The Granite State",
+    "state": "New Hampshire  "
+  },
+  {
+    "capitol": "Trenton",
+    "nickname": "The Garden State",
+    "state": "New Jersey"
+  },
+  {
+    "capitol": "Santa Fe",
+    "nickname": "The Land of Enchantment",
+    "state": "New Mexico"
+  },
+  {
+    "capitol": "Albany",
+    "nickname": "The Empire State",
+    "state": "New York"
+  },
+  {
+    "capitol": "Raleigh",
+    "nickname": "The Tar Heel State",
+    "state": "North Carolina"
+  },
+  {
+    "capitol": "Bismarck",
+    "nickname": "The Peace Garden State",
+    "state": "North Dakota"
+  },
+  {
+    "capitol": "Columbus",
+    "nickname": "The Buckeye State",
+    "state": "Ohio"
+  },
+  {
+    "capitol": "Oklahoma City  ",
+    "nickname": "The Sooner State",
+    "state": "Oklahoma"
+  },
+  {
+    "capitol": "Salem",
+    "nickname": "The Beaver State",
+    "state": "Oregon"
+  },
+  {
+    "capitol": "Harrisburg",
+    "nickname": "The Keystone State",
+    "state": "Pennsylvania"
+  },
+  {
+    "capitol": "Providence",
+    "nickname": "The Ocean State",
+    "state": "Rhode Island"
+  },
+  {
+    "capitol": "Columbia",
+    "nickname": "The Palmetto State",
+    "state": "South Carolina"
+  },
+  {
+    "capitol": "Pierre",
+    "nickname": "Mount Rushmore State",
+    "state": "South Dakota"
+  },
+  {
+    "capitol": "Nashville",
+    "nickname": "The Volunteer State",
+    "state": "Tennessee"
+  },
+  {
+    "capitol": "Austin",
+    "nickname": "The Lone Star State",
+    "state": "Texas"
+  },
+  {
+    "capitol": "Salt Lake City",
+    "nickname": "The Beehive State",
+    "state": "Utah"
+  },
+  {
+    "capitol": "Montpelier",
+    "nickname": "The Green Mountain State",
+    "state": "Vermont"
+  },
+  {
+    "capitol": "Richmond",
+    "nickname": "The Old Dominion State",
+    "state": "Virginia"
+  },
+  {
+    "capitol": "Olympia",
+    "nickname": "The Evergreen State",
+    "state": "Washington"
+  },
+  {
+    "capitol": "Charleston",
+    "nickname": "The Mountain State",
+    "state": "West Virginia"
+  },
+  {
+    "capitol": "Madison",
+    "nickname": "The Badger State",
+    "state": "Wisconsin"
+  },
+  {
+    "capitol": "Cheyenne",
+    "nickname": "The Equality or Cowboy State",
+    "state": "Wyoming"
+  }
+]
