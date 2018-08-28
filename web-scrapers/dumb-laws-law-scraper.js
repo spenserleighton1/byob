@@ -23,7 +23,6 @@ nightmare
 
 const getLaws = (array) => {
   asyncForEach(array, async (link) => {
-    console.log(link)
   const nightmare = Nightmare({ show: true });
     await nightmare
       .goto(link)
@@ -31,7 +30,7 @@ const getLaws = (array) => {
         const laws = [...document.querySelectorAll('.column_left .lawentry')];
         const state = document.querySelector('.column .selected_category a').innerText;
         const lawData = laws.map(lawentry => lawentry.innerText)
-          return { state: state, lawData}
+          return { state: state, laws: lawData}
       })
       .end()
       .then(result => {
