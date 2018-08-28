@@ -1,5 +1,5 @@
-{
-  "Alabama": [
+[{
+  "laws": [
     "Bear wrestling matches are prohibited.",
     "Incestuous marriages are legal.",
     "It is illegal to impersonate a person of the clergy.",
@@ -20,9 +20,10 @@
     "No person may spit on the floor of a church.",
     "It is illegal to bike, roller-skate, skateboard, or inline skate in a commercially zoned area.",
     "Men who deflower virgins, regardless of age or marital status, may face up to five years in jail."
-  ]
+  ],
+  "state": "Alabama"
 },{
-  "Alaska": [
+  "laws": [
     "Moose may not be viewed from an airplane.",
     "While it is legal to shoot bears, waking a sleeping bear for the purpose of taking a photograph is prohibited.",
     "It is considered an offense to push a live moose out of a moving airplane.",
@@ -38,9 +39,10 @@
     "Buildings that preserve scenic vistas are awarded ?bonus points? by the government.",
     "One may not roam the city with a bow and arrows.",
     "Persons may not allow “attractive nuisances” to exist."
-  ]
+  ],
+  "state": "Alaska"
 },{
-  "Arizona": [
+  "laws": [
     "Hunting camels is prohibited.",
     "Any misdemeanor committed while wearing a red mask is considered a felony.",
     "There is a possible 25 years in prison for cutting down a cactus.",
@@ -60,9 +62,10 @@
     "One must be 18 years old to buy spray paint.",
     "It is illegal for men and women over the age of 18 to have less than one missing tooth visible when smiling.",
     "Women may not wear pants."
-  ]
+  ],
+  "state": "Arizona"
 },{
-  "Arkansas": [
+  "laws": [
     "It’s strictly prohibited to pronounce “Arkansas” incorrectly",
     "The Arkansas River can rise no higher than to the Main Street bridge in Little Rock.",
     "A law provides that school teachers who bob their hair will not get a raise.",
@@ -75,9 +78,10 @@
     "Dogs may not bark after 6 PM.",
     "Flirtation between men and women on the streets of Little Rock may result in a 30-day jail term.",
     "It is unlawful to walk one’s cow down Main Street after 1:00 PM on Sunday."
-  ]
+  ],
+  "state": "Arkansas"
 },{
-  "California": [
+  "laws": [
     "California prison workers will no longer be allowed to have sex with inmates",
     "Film producers must have permission from a pediatrician before filming a child under the age of one month",
     "It’s unlawful to let a dog pursue a bear or bobcat at any time.",
@@ -98,9 +102,10 @@
     "A man can’t go outside while wearing a jacket and pants that do not match.",
     "Ice cream may not be eaten while standing on the sidewalk. (Repealed when Clint Eastwood was mayor)",
     "Women may not wear high heels while in the city limits."
-  ]
+  ],
+  "state": "California"
 },{
-  "Colorado": [
+  "laws": [
     "One may not mutilate a rock in a state park.",
     "Car dealers may not show cars on a Sunday.",
     "It is illegal for liquor stores to sell food or grocery stores to sell any alcohol except beer that is at most 3.",
@@ -121,9 +126,10 @@
     "It is illegal to bring your horse or pack mule above the ground floor of any building.",
     "The dog catcher must notify dogs of impounding by posting, for three consecutive days, a notice on a tree in the city park and along a public road running through said park.",
     "It is unlawful to lend your vacuum cleaner to your next-door neighbor."
-  ]
+  ],
+  "state": "Colorado"
 },{
-  "Connecticut": [
+  "laws": [
     "Town records may not be kept where liquor is sold.",
     "You can be stopped by the police for biking over 65 miles per hour.",
     "In order for a pickle to officially be considered a pickle, it must bounce.",
@@ -140,9 +146,10 @@
     "An arcade may not have more than a total of four amusement devices such as ping-pong tables, pinball machines, or shuffleboard tables.",
     "Silly string is banned.",
     "It is illegal for any beautician to hum, whistle, or sing while working on a customer."
-  ]
+  ],
+  "state": "Connecticut"
 },{
-  "Delaware": [
+  "laws": [
     "“R” rated movies shall not be shown at drive-in theaters.",
     "It is illegal to fly over any body of water, unless one is carrying sufficient supplies of food and drink.",
     "One may not lay down on the beach at night",
@@ -158,9 +165,10 @@
     "Six-year-old girls may not run around without being fully clothed.",
     "Alcohol may not be served in nightclubs if dancing is occurring on the premises at the same time.",
     "All persons must carry a bag with them at all times when they walk their dog in case said dog “poops”, or risk a $100 fine."
-  ]
+  ],
+  "state": "Delaware"
 },{
-  "Florida": [
+  "laws": [
     "Florida (accidentally) banned all computers and smart phones in internet cafes",
     "The term “motor vehicle” was revised to exclude swamp buggies, deregulating the primary mode of transportation in the state.",
     "Repealed It is illegal for a doctor to ask a patient whether they own a gun.",
@@ -181,9 +189,10 @@
     "Having sexual relations with a porcupine is illegal.",
     "It is illegal to skateboard without a license.",
     "When having sex, only the missionary position is legal."
-  ]
+  ],
+  "state": "Florida"
 },{
-  "Georgia": [
+  "laws": [
     "You cannot live on a boat for more than 30 days during the calendar year, even if just passing through the state",
     "If an organization non registered as “non-profit” fails to register their raffle with the local sheriff, that group risks paying up to $10,000 in fines and spending five years in jail.",
     "While Georgia operates its own lottery, it “protects” its citizens by making it illegal to promote a private lottery.",
@@ -204,17 +213,19 @@
     "Owners of mules may not allow their animal to roam around Athens unsupervised.",
     "Persons under the age of 16 may not play pinball after 11:00 PM.",
     "It is illegal for one to make a disturbing sound at a fair."
-  ]
+  ],
+  "state": "Georgia"
 },{
-  "Hawaii": [
+  "laws": [
     "In Hawaii you will be fined for riding in the back of a passenger car without a seatbelt, however you can ride in the bed of a pickup truck with no safety equipment",
     "You may only have one alcoholic drink in front of you at a time",
     "Billboards are outlawed.",
     "All residents may be fined as a result of not owning a boat.",
     "Coins are not allowed to be placed in one’s ears."
-  ]
+  ],
+  "state": "Hawaii"
 },{
-  "Idaho": [
+  "laws": [
     "Illegal for a man to give his sweetheart a box of candy weighing less than fifty pounds.",
     "You may not fish on a camel’s back.",
     "Riding a merry-go-round on Sundays is considered a crime.",
@@ -225,9 +236,10 @@
     "Persons may not camp out on sidewalks in the city.",
     "A law passed in 1912 provided that “The carrying of concealed weapons is forbidden, unless some are exhibited to public view.",
     "A person may not be seen in public without a smile on their face."
-  ]
+  ],
+  "state": "Idaho"
 },{
-  "Illinois": [
+  "laws": [
     "It is against the law to have sex with a corpse in Illinois",
     "Sex offenders in Illinois are prohibited from participating in holiday events like handing out candy at Halloween and Easter or dressing like Santa at Christmas, except under specific circumstances",
     "Those under 21 can drink legally, but they must be enrolled in a culinary program to do so",
@@ -248,9 +260,10 @@
     "It is legal to protest naked in front of city hall as long as you are under seventeen years of age and have legal permits.",
     "Humming on public streets is prohibited on Sundays.",
     "It is illegal to wear sagging pants in Collinsville, IL."
-  ]
+  ],
+  "state": "Illinois"
 },{
-  "Indiana": [
+  "laws": [
     "Waitresses may not carry drinks into a restaurant or bar.",
     "Hotel sheets must be exactly 99 inches long and 81 inches wide.",
     "If any person has a puppet show, wire dancing or tumbling act in the state of Indiana and receives money for it, they will be fined $3 under the Act to Prevent Certain Immoral Practices.",
@@ -271,9 +284,10 @@
     "Pedestrians crossing the highway at night are prohibited from wearing tail lights.",
     "Oral sex is illegal.",
     "No one may catch a fish with his bare hands."
-  ]
+  ],
+  "state": "Indiana"
 },{
-  "Iowa": [
+  "laws": [
     "It is a crime to use a dead person’s handicapped parking sign or license plate",
     "A man with a moustache may never kiss a woman in public.",
     "One-armed piano players must perform for free.",
@@ -294,9 +308,10 @@
     "No person may pick a flower from a city park.",
     "All softball diamond lights must be turned off by 10:30 PM.",
     "Within the city limits, a man may not wink at any woman he does not know."
-  ]
+  ],
+  "state": "Iowa"
 },{
-  "Kansas": [
+  "laws": [
     "Rabbits may not be shot from motorboats.",
     "Pedestrians crossing the highways at night must wear tail lights.",
     "No one may catch fish with his bare hands.",
@@ -317,18 +332,20 @@
     "Many cities have laws to force citizens to keep their yards in decent shape.",
     "No one may sing the alphabet on the streets at night.",
     "Spitting on sidewalks is expressing forbidden."
-  ]
+  ],
+  "state": "Kansas"
 },{
-  "Kentucky": [
+  "laws": [
     "Throwing eggs at a public speaker could result in up to one year in prison. (Repealed, 1975)",
     "One may not dye a duckling blue and offer it for sale unless more than six are for sale at once.",
     "It is illegal to fish with a bow and arrow in Kentucky.",
     "Dogs may not molest cars.",
     "One may not receive anal sex.",
     "A woman may not buy a hat without her husband’s permission."
-  ]
+  ],
+  "state": "Kentucky"
 },{
-  "Louisiana": [
+  "laws": [
     "“Fake” wrestling matches are prohibited.",
     "Spectators at a boxing match may not mock one of the contestants.",
     "One could possibly land in jail for 20 years upon urinating in the city’s water supply.",
@@ -349,9 +366,10 @@
     "Prisoners who hurt themselves could serve an additional two years in jail.",
     "Minors may not go to businesses with coin-operated foosball machines unless accompanied by an adult.",
     "No one may pour a drink out on the ground at any drive-in movie."
-  ]
+  ],
+  "state": "Louisiana"
 },{
-  "Maine": [
+  "laws": [
     "Shotguns are required to be taken to church in the event of a Native American attack.",
     "You may not step out of a plane in flight.",
     "After January 14th you will be charged a fine for having your Christmas decorations still up.",
@@ -365,9 +383,10 @@
     "Dog leashes may not be over eight feet in length.",
     "Deer may not be fed.",
     "Advertisements may not be placed in cemeteries."
-  ]
+  ],
+  "state": "Maine"
 },{
-  "Maryland": [
+  "laws": [
     "Oral sex can not be given or received anywhere.",
     "Thistles may not grow in one’s yard.",
     "It’s illegal to throw bales of hay from a second-story window within the city limits.",
@@ -382,9 +401,10 @@
     "Persons may not swear while on the highway.",
     "It is illegal to remove a public building by writing on it.",
     "Citizens may not swim in the public fountains within the city limits."
-  ]
+  ],
+  "state": "Maryland"
 },{
-  "Massachusetts": [
+  "laws": [
     "It is illegal to give beer to hospital patients.",
     "Candy may not contain more than 1% of alcohol.",
     "Shooting ranges may not set up targets that resemble human beings.",
@@ -405,9 +425,10 @@
     "No gorilla is allowed in the back seat of any car.",
     "Tattooing and body piercing is illegal. (Repealed in 2000)",
     "Children may smoke, but they may not purchase cigarettes."
-  ]
+  ],
+  "state": "Massachusetts"
 },{
-  "Michigan": [
+  "laws": [
     "Persons may not be drunk on trains.",
     "It is illegal to kill a dog using a decompression chamber.",
     "Adultery is illegal, but can only be punished upon a complaint by the affected husband or wife.",
@@ -428,9 +449,10 @@
     "It is illegal for a man to scowl at his wife on Sunday.",
     "It is illegal to let your pig run free in Detroit unless it has a ring in its nose.",
     "No person shall throw an abandoned hoop skirt into any street or on any sidewalk, under penalty of a five- dollar fine for each offense."
-  ]
+  ],
+  "state": "Michigan"
 },{
-  "Minnesota": [
+  "laws": [
     "The land of 10,000 lakes declares mosquitos a public nuisance.",
     "It is illegal to stand around any building without a good reason to be there.",
     "A person may not cross state lines with a duck atop his head.",
@@ -448,9 +470,10 @@
     "Placing tacks on a sidewalk is considered a public nuisance.",
     "Any person who persuades another to enter a massage therapist business after 11:00 PM is guilty of a misdemeanor.",
     "Hamburgers may not be eaten on Sundays."
-  ]
+  ],
+  "state": "Minnesota"
 },{
-  "Mississippi": [
+  "laws": [
     "Mississippi’s “Anti-Bloomberg Bill” will restrict towns and counties from regulating nutrition labeling",
     "If one is a parent to two illegitimate children, that person will go to jail for at least one month.",
     "No one may bribe any athlete to “rig” a game, match, tournament, etc.",
@@ -467,9 +490,10 @@
     "It is unlawful for anyone to have sex in public.",
     "Exterior burglar bars which are viewable from the street are not allowed.",
     "It is unlawful to shave in the center of main street."
-  ]
+  ],
+  "state": "Mississippi"
 },{
-  "Missouri": [
+  "laws": [
     "It is illegal to have oral sex.",
     "Single men between the ages of twenty-one and fifty must pay an annual tax of one dollar (enacted 1820).",
     "It is illegal to speed",
@@ -490,9 +514,10 @@
     "Four women may not rent an apartment together.",
     "No person may own a PVC pipe.",
     "No person may have a “yard sale” in their front yard."
-  ]
+  ],
+  "state": "Missouri"
 },{
-  "Montana": [
+  "laws": [
     "Prostitution is considered a “crime against the family”.",
     "One may not pretend to abuse an animal in the presence of a minor.",
     "In Montana, it is illegal for married women to go fishing alone on Sundays, and illegal for unmarried women to fish alone at all.",
@@ -513,9 +538,10 @@
     "The game of “folf” may not be played at night.",
     "No item may be thrown across a street.",
     "All pool tables must be able to be viewed from the street outside a billiard hall where they are located."
-  ]
+  ],
+  "state": "Montana"
 },{
-  "Nebraska": [
+  "laws": [
     "Drivers on mountains should drive with caution near the right hand edge of the highway –there are no mountains in Nebraska!",
     "Persons with gonorrhea may not marry.",
     "It is illegal to fly a plane while drunk.",
@@ -527,9 +553,10 @@
     "Sneezing or burping is illegal during a church service.",
     "A man is not allowed to run around with a shaved chest.",
     "Barbers are forbidden from eating onions between 7 A."
-  ]
+  ],
+  "state": "Nebraska"
 },{
-  "Nevada": [
+  "laws": [
     "It is illegal to drive a camel on the highway.",
     "It’s still “legal” to hang someone for shooting your dog on your property.",
     "An ordinance makes bringing a concealable fire arm into the county illegal unless it is registered with the Las Vegas Metropolitan Police Department.",
@@ -538,9 +565,10 @@
     "It is illegal to lie down on the sidewalk.",
     "Benches may not be placed in the middle of any street.",
     "Sex toys are outlawed."
-  ]
+  ],
+  "state": "Nevada"
 },{
-  "New Hampshire": [
+  "laws": [
     "You may not tap your feet, nod your head, or in any way keep time to the music in a tavern, restaurant, or cafe.",
     "You cannot sell the clothes you are wearing to pay off a gambling debt.",
     "It is considered an offense to check into a hotel under an assumed name.",
@@ -550,9 +578,10 @@
     "On Sundays citizens may not relieve themselves while looking up.",
     "In cemeteries it is illegal to: get drunk, picnic, enter at night, and enter by one’s self if that person is younger than 10.",
     "If a person is caught raking the beaches, picking up litter, hauling away trash, building a bench for the park, or many other kind things without a permit, he/she may be fined $150 for ”maintaining the national forest without a permit”."
-  ]
+  ],
+  "state": "New Hampshire"
 },{
-  "New Jersey": [
+  "laws": [
     "Drivers must warn those who they pass on highways before they do so.",
     "Spray paint may not be sold without a posted sign warning juveliles of the penalty for creating graffiti.",
     "Handcuffs may not be sold to minors.",
@@ -573,9 +602,10 @@
     "Shooting ranges are outlawed.",
     "No street-side trees may be planted that “obscure the air”.",
     "It is illegal to throw ashes on the sidewalk."
-  ]
+  ],
+  "state": "New Jersey"
 },{
-  "New Mexico": [
+  "laws": [
     "Nudity is allow, provided that male genitals are covered.",
     "Women may walk in public topless provided they have their nipples covered.",
     "Idiots may not vote.",
@@ -586,9 +616,10 @@
     "Hunting is prohibited in Mountain View Cemetery.",
     "",
     "You may not carry a lunchbox down Main Street."
-  ]
+  ],
+  "state": "New Mexico"
 },{
-  "New York": [
+  "laws": [
     "It is illegal to congregate in public with two or more people while each wearing a mask or any face covering which disguises your identity.",
     "In New York, adultery is still a crime.",
     "It is against the law to throw a ball at someone’s head for fun.",
@@ -609,9 +640,10 @@
     "People may not slurp their soup.",
     "Pinball machines are not to be played on Sunday.",
     "Raw hamburger may not be sold."
-  ]
+  ],
+  "state": "New York"
 },{
-  "North Carolina": [
+  "laws": [
     "It is a felony to steal more than $1000 of grease",
     "A bill has been passed that restricts local planning agencies’ ability to use climate change science to predict sea-level rise.",
     "The mere possession of a lottery ticket is illegal in North Carolina and may result in a $2,000 fine. Repealed",
@@ -632,17 +664,19 @@
     "Fights between cats and dogs are prohibited.",
     "It is a misdemeanor to urinate or defecate publicly.",
     "Women must have their bodies covered by at least 16 yards of cloth at all times."
-  ]
+  ],
+  "state": "North Carolina"
 },{
-  "North Dakota": [
+  "laws": [
     "It is illegal to lie down and fall asleep with your shoes on.",
     "Beer and pretzels can’t be served at the same time in any bar or restaurant.",
     "It is legal to shoot an Indian on horseback, provided you are in a covered wagon.",
     "New Year’s celebrations are somewhat bland in this town as fireworks may not be set off after 11:00 PM!",
     "One may be jailed for wearing a hat while dancing, or even for wearing a hat to a function where dancing is taking place."
-  ]
+  ],
+  "state": "North Dakota"
 },{
-  "Ohio": [
+  "laws": [
     "",
     "It is illegal for more than five women to live in a house.",
     "It is illegal to mistreat anything of great importance.",
@@ -663,9 +697,10 @@
     "Electric fences are banned.",
     "If one loses their pet tiger, they must notify the authorities within one hour.",
     "Power Wheels® cars may not be driven down the street."
-  ]
+  ],
+  "state": "Ohio"
 },{
-  "Oklahoma": [
+  "laws": [
     "One may not promote a “horse tripping event”.",
     "It is illegal for the owner of a bar to allow anyone inside to pretend to have sex with a buffalo.",
     "Females are forbidden from doing their own hair without being licensed by the state.",
@@ -686,9 +721,10 @@
     "Cars must be tethered outside of public buildings.",
     "Oral sex is a misdemeanor and is punisable by one year in jail and a $2,500 fine.",
     "Anyone arrested for soliciting a hooker must have their name and picture shown on television."
-  ]
+  ],
+  "state": "Oklahoma"
 },{
-  "Oregon": [
+  "laws": [
     "Drivers must yield to pedestrians who are standing on the sidewalk.",
     "One may not test their physical endurance while driving a car on a highway.",
     "It is illegal to place a container filled with human fecal matter on the side of any highway.",
@@ -709,9 +745,10 @@
     "Juggling is strictly prohibited without a license.",
     "It’s illegal to walk down a sidewalk and knock a snakes head off with your cane.",
     "You cannot eat a doughnut and walk backwards on a city street."
-  ]
+  ],
+  "state": "Oregon"
 },{
-  "Pennsylvania": [
+  "laws": [
     "It is contrary to Pennsylvania law to discharge a gun, cannon, revolver or other explosive weapon at a wedding.",
     "All liquor stores must be run by the state.",
     "It is illegal to have over 16 women live in a house together because that constitutes a brothel.",
@@ -732,9 +769,10 @@
     "There is a ban on men becoming aroused in public.",
     "Persons convicted of felonies may not operate Bingo games.",
     "Operators of bingo games may not advertise the prizes offered."
-  ]
+  ],
+  "state": "Pennsylvania"
 },{
-  "Rhode Island": [
+  "laws": [
     "Cap guns are illegal.",
     "Ropes may not be strung across a highway.",
     "No one may bite off another?s leg.",
@@ -752,9 +790,10 @@
     "You may not sell toothpaste and a toothbrush to the same customer on a Sunday.",
     "It is illegal to drive down any street with beer in your car, even if it is unopened.",
     "It is illegal to use water on even-numbered days for the sole purpose of watering plants, gardens, or lawns."
-  ]
+  ],
+  "state": "Rhode Island"
 },{
-  "South Carolina": [
+  "laws": [
     "An exception to the above law is that light bulbs may be sold.",
     "Every adult male must bring a rifle to church on Sunday in order to ward off Indian attacks.",
     "No work may be done on Sunday.",
@@ -775,17 +814,19 @@
     "When approaching a four way or blind intersection in a non-horse driven vehicle you must stop 100 ft from the intersection and discharge a firearm into the air to warn horse traffic.",
     "Dance halls may not operate on Sundays.",
     "It is perfectly legal to beat your wife on the court house steps on Sundays."
-  ]
+  ],
+  "state": "South Carolina"
 },{
-  "South Dakota": [
+  "laws": [
     "No horses are allowed into Fountain Inn unless they are wearing pants.",
     "It is illegal to lie down and fall asleep in a cheese factory.",
     "Movies that show police officers being struck, beaten, or treated in an offensive manner are forbidden.",
     "If there are more than 5 Native Americans on your property you may shoot them.",
     "If three or more Indians are walking down the street together, they can be considered a war party and fired upon."
-  ]
+  ],
+  "state": "South Dakota"
 },{
-  "Tennessee": [
+  "laws": [
     "Students may not hold hands while at school.",
     "It is a crime to share your Netflix password in Tennessee.",
     "In Tennessee it is illegal to to post images online that cause â??emotional distressâ? â??without legitimate purposeâ?.",
@@ -806,9 +847,10 @@
     "It is illegal to dare a child to purchase a beer.",
     "It is illegal to place tacks on a highway.",
     "Skunks may not be carried into the state."
-  ]
+  ],
+  "state": "Tennessee"
 },{
-  "Texas": [
+  "laws": [
     "The Bluebonnet is the official song of the state flower.",
     "It is illegal to sell one’s eye",
     "A program has been created in the state that attempts to control the weather.",
@@ -829,9 +871,10 @@
     "It’s illegal to possess realistic dildos.",
     "Urinating on the streets is illegal.",
     "Appearing in public places wearing a “lewd dress” is prohibited."
-  ]
+  ],
+  "state": "Texas"
 },{
-  "Utah": [
+  "laws": [
     "It’s legal for restaurants to serve wine with meals, but only if you ask for the wine list.",
     "It is considered an offense to hunt whales.",
     "No one may have sex in the back of an ambulance if it is responding to an emergency call.",
@@ -852,17 +895,19 @@
     "Only animal services officials and policemen may molest animals",
     "Persons are only allowed to keep one cow on their property",
     "Throwing snowballs will result in a $50 fine."
-  ]
+  ],
+  "state": "Utah"
 },{
-  "Vermont": [
+  "laws": [
     "Women must obtain written permission from their husbands to wear false teeth.",
     "At one time it was illegal to tie a giraffe to a telephone pole.",
     "",
     "It is illegal to deny the existence of God.",
     "All residents shall bathe every Saturday night."
-  ]
+  ],
+  "state": "Vermont"
 },{
-  "Virginia": [
+  "laws": [
     "Citizens must honk their horn while passing other cars.",
     "Children are not to go trick-or-treating on Halloween.",
     "It is illegal to tickle women.",
@@ -883,9 +928,10 @@
     "No person may keep a skunk as a pet.",
     "It is illegal to cuss about another.",
     "It is illegal to park a car on railroad tracks."
-  ]
+  ],
+  "state": "Virginia"
 },{
-  "Washington": [
+  "laws": [
     "The harassing of Bigfoot, Sasquatch or other undiscovered subspecies is a felony punishable by a fine and/or imprisonment.",
     "It is illegal to attach a vending machine to a utility pole without prior consent from the utility company.",
     "No person may walk about in public if he or she has the common cold.",
@@ -906,9 +952,10 @@
     "You may not shuck peanuts on the street – False, you can!",
     "It is illegal to display a hypnotized or allegedly hypnotized person in a store window.",
     "Dancing and drinking may not occur at the same establishment."
-  ]
+  ],
+  "state": "Washington"
 },{
-  "West Virginia": [
+  "laws": [
     "Unmarried couple who live together and “lewdly associate” with one another may face up to a year in prison. (Repealed: 2010)",
     "Roadkill may be taken home for supper.",
     "When a railroad passes within 1 mile of a community of 100 or more people in it, they must build a station and stop there regularly to pick up and drop off passengers.",
@@ -926,9 +973,10 @@
     "Firemen may not whistle or flirt at any woman passing a firehouse.",
     "It is legal to beat your wife so long as it is done in public on Sunday, on the courthouse steps.",
     "No member of the clergy is allowed to tell jokes or humorous stories from the pulpit during a church service."
-  ]
+  ],
+  "state": "West Virginia"
 },{
-  "Wisconsin": [
+  "laws": [
     "State Law made it illegal to serve apple pie in public restaurants without cheese.",
     "The state definition of rape stated that it was a man having sex with a woman he knows not to be his wife.",
     "While all cheese making requires a license, Limburger cheese making requires a master cheese maker’s license.",
@@ -949,9 +997,10 @@
     "It is unlawful for one to allow another to use the first person’s telephone in order to make prank phone calls.",
     "Screens are required on all windows from May 1 to October 1.",
     "You are not allowed to put litter into someone else’s trash receptacle without express permission."
-  ]
+  ],
+  "state": "Wisconsin"
 },{
-  "Wyoming": [
+  "laws": [
     "All new buildings that cost over $100,000 to build must have 1% of funds spent on artwork for the building.",
     "If one is drunk in a mine, he or she could land in jail for up to a year.",
     "Junk dealers may not make any business transactions with drunk persons.",
@@ -962,5 +1011,6 @@
     "You may not take a picture of a rabbit from January to April without an official permit.",
     "Skiing under the influence of alcohol is prohibited.",
     "It is illegal to spit on the steps of a school."
-  ]
-},
+  ],
+  "state": "Wyoming"
+}]
