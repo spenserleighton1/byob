@@ -1,7 +1,6 @@
 const Nightmare = require('nightmare');
 const nightmare = Nightmare({ show: true });
 const fs = require('fs');
-let linksToFetch = [];
 
 async function asyncForEach(array, callback) {
   for (let index = 0; index < array.length; index++) {
@@ -17,19 +16,7 @@ nightmare
     return urls
   })
   .end()
-  .then(result => {
-    // console.log(result)
-    // let output = JSON.stringify(result)
-    // console.log(output)
-    getLaws(result)
-    // console.log(output)
-    // fs.writeFile('../data/law-links.json', output, 'utf8', err => {
-    //   if (err) {
-    //     return console.log('Error saving file:', err)
-    //   }
-    // })
-    // console.log('File saved')
-  })
+  .then(result => getLaws(result))
   .catch(err => {
     console.log('Error:', err)
   })
