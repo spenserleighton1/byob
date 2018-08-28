@@ -31,7 +31,7 @@ const getLaws = (array) => {
         const laws = [...document.querySelectorAll('.column_left .lawentry')];
         const state = document.querySelector('.column .selected_category a').innerText;
         const lawData = laws.map(lawentry => lawentry.innerText)
-          return {[state]: lawData}
+          return { state: state, lawData}
       })
       .end()
       .then(result => {
