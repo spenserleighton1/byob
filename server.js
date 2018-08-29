@@ -34,6 +34,22 @@ app.get('/api/v1/state_info/:id', (req, res) => {
     });
 });
 
+// app.get('/api/v1/state_info?state=:name', (req, res) => {
+//   database('state_info').where('name', req.params.state).select()
+//     .then(state => {
+//       if (state.length) {
+//         res.status(200).json(state);
+//       } else {
+//         res.status(404).json({
+//           error: `Could not find a state with name ${req.params.name}`
+//         });
+//       }
+//     })
+//     .catch(err => {
+//       res.status(500).json({ err })
+//     });
+// });
+
 app.post('/api/v1/state_info', (req, res) => {
   const stateInfo = req.body;
 
@@ -63,7 +79,7 @@ app.put('/api/v1/state_info/:id', (req, res) => {
         .send({ error: `Expected format: { state_name: <STRING>, state_nickname: <STRING>, state_capital: <STRING> }. You are missing a "${requiredParam}" property.`})
     }
   }
-  database('state_info').update(stateInfo, 'id')
+  database('state_info').where('id', req.params.id).update(stateInfo, 'id')
     .then(state => {
       res.status(201).json({ id: state[0] })
     })
