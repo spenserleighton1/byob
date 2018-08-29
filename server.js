@@ -18,7 +18,24 @@ app.get('/api/v1/state_info', (req, res) => {
     })
 })
 
+app.post('/api/v1/state_info', (req, res) => {
+  const stateInfo = req.body;
 
+  for (let requiredParam of ['state_name', 'state_nickname', 'state_capital']) {
+    if (!stateInfo[requiredParam]) {
+      return res
+        .status(422)
+        .send({ error: `Expected format: { state_name: <STRING>, state_nickname: <STRING>, state_capital: <STRING> }. You are missing a "${requiredParam}" property.`})
+    }
+  }
+  database('state_info').insert(stateInfo, 'id')
+    .then(state => {
+      res.status(201).json({ id: state[0] })
+    })
+    .catch(err => {
+      res.status(500).json({ err })
+    })
+})
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'B.Y.O.B.'
