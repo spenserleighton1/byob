@@ -60,22 +60,21 @@ app.get('/api/v1/state_facts/:id', (req, res) => {
     });
 });
 
-// app.get('/api/v1/state_info/', (req, res) => {
-//   console.log(req.query.state_name)
-//   database('state_info').where('state_name', req.query.state_name).select()
-//     .then(state => {
-//       if (state.length) {
-//         res.status(200).json(state);
-//       } else {
-//         res.status(404).json({
-//           error: `Could not find a state with name ${req.params.name}`
-//         });
-//       }
-//     })
-//     .catch(err => {
-//       res.status(500).json({ err })
-//     });
-// });
+app.get('/api/v1/state_info/', (req, res) => {
+  database('state_info').where('state_name', req.query.state_name).select()
+    .then(state => {
+      if (state.length) {
+        res.status(200).json(state);
+      } else {
+        res.status(404).json({
+          error: `Could not find a state with name ${req.params.name}`
+        });
+      }
+    })
+    .catch(error => {
+      res.status(500).json({ error });
+    });
+});
 
 app.post('/api/v1/state_info', (req, res) => {
   const stateInfo = req.body;
@@ -158,14 +157,6 @@ app.put('/api/v1/state_info/:id', (req, res) => {
 app.put('/api/v1/state_facts/:id', (req, res) => {
   const stateFacts = req.body;
 
-  // for (let requiredParam of ['dumb_laws_1', 'dumb_laws_2', 'dumb_laws_3', 'dumb_laws_4', 'dumb_laws_5','worst_foods', 'weird_facts', 'weird_attractions']) {
-  //   if (!stateFacts[requiredParam]) {
-  //     return res
-  //       .status(422)
-  //       .send({ error: `Expected format: {dumb_laws_1: <STRING>, dumb_laws_2: <STRING>, dumb_laws_3: <STRING>, dumb_laws_4: <STRING>, dumb_laws_5: <STRING>, worst_foods: <STRING>, weird_facts: <STRING>, weird_attractions: <STRING>, state_id: <INTEGER>}. You are missing a "${requiredParam}" property.`})
-  //   }
-  // }
-
   database('state_facts').where('id', req.params.id).update(stateFacts, 'id')
     .then(state => {
       if (state.length) {
@@ -181,13 +172,21 @@ app.put('/api/v1/state_facts/:id', (req, res) => {
     });
 });
 
-
-
 app.delete('/api/v1/state_info/:id', (req, res) => {
-  database('state_info').where('id', req.params.id).del()
+  database('state_facts').where('state_id', req.params.id).del()
+    .then(() => database('state_info').where('id', req.params.id).del())
     .then(() => {
       res.status(202).json({
         'id': req.params.id
+      });
+    });
+});
+
+app.delete('/api/v1/state_facts/:state_id', (req, res) => {
+  database('state_facts').where('state_id', req.params.state_id).del()
+    .then(() => {
+      res.status(202).json({
+        'state_id': req.params.state_id
       });
     });
 });
@@ -203,4 +202,6 @@ app.get('/', (req, res) => {
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on ${app.get('port')}.`);
 });
+
+module.exports = app;
 
