@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+services:
+- postgresql
+before_script:
+- psql -c 'CREATE DATABASE united_states;' -U postgres
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: dqIxCTYfbwBvGL6+Q6KpJ0GFJ3N1d7buUvr9ujKznZZpNvhtmz+YmnlbOFU/Giv0jf4eZtjGIJFnqWQlmGbz02BnrGei4aixF+CwHodHfotp+WtXWmqg3FuXTdseWmXj5yaj/HA15i+uLk+aRib6p92juJ6aHUcINXcRqc3JrARyON24JDqn+uW4Nl5SNmfv0UFXyQbhBN+92sI+oAgEBctnu1xjO4BYLvdMPw4+VqXVjIo4mQRnhtPQg8kb+dJZLkR7nDutbUMgKUbXjmuhd0hVKCDy7JWUD0rfuLNUKs27CoL8LoPYClzsZBm0AVLTTXCHrrLdz7PU6HMw/kour3+clzuVm7gFOwDDzx5psfjgrVydoNLXL4qTrJn3RCkA3ERX+Y8EPOPSmKboik3IkDqEfPVDTN7C0SWRdB6in6YSdBjcKWcx95nMb8DMH30MfPVpyEvSVdBIan8F4FfqNdxz0pEXvENqUZky/xpcXqkOfO6AR8s4KaLLQNu6VypCSUZDkJm+zhKrsffUaOXGfD+mEHFbx+xK3ZG1wZ7Rll4jJqGBkr4zFspzsintl7pDhs27/dPJ6Ko2JrVTMm2Qxfb9GEqa7aq/+ZwaEKfLYHdnQoS0czf0BkF5XpuyM4e2GVBES2V1BbyMI0B5ihbnY/du4L7375aEpSunrAlBWGc=
+  app: spenser-ryan-byob
+  skip_cleanup: true
