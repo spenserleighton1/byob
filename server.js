@@ -18,6 +18,22 @@ app.get('/api/v1/state_info', (req, res) => {
     })
 })
 
+app.get('/api/v1/state_info/:id', (req, res) => {
+  database('state_info').where('id', req.params.id).select()
+    .then(state => {
+      if (state.length) {
+        res.status(200).json(state);
+      } else {
+        res.status(404).json({
+          error: `Could not find a state with id ${req.params.id}`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).json({ err })
+    });
+});
+
 app.post('/api/v1/state_info', (req, res) => {
   const stateInfo = req.body;
 
@@ -36,6 +52,8 @@ app.post('/api/v1/state_info', (req, res) => {
       res.status(500).json({ err })
     })
 })
+
+
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'B.Y.O.B.'
