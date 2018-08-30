@@ -4,11 +4,51 @@ const database = require('knex')(configuration);
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const jwt = require('jsonwebtoken');
 
+require('dotenv').config();
+
+app.set('secretKey', process.env.secretKey);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/api/v1/state_info', (req, res) => {
+const checkAuth = (request, response, next) => {
+  const { token } = request.headers;
+  console.log(token);
+
+  if (!token) {
+    return response.status(403).json(
+      {error: 'You must be authorized to access this endpoint'});
+  }
+  try {
+    const decoded = jwt.verify(token, app.get('secretKey'));
+    const validApps = ['byob'];
+
+    if (validApps.includes(decoded.appInfo.appName)) {
+      request.decoded = decoded;
+      next();
+    }
+  } catch (error) {
+    return response.status(403).json({error: 'Invalid Token'});
+  }
+};
+
+app.post('/api/v1/jwt', (request, response) => {
+  const appInfo = request.body;
+
+  for (let reqParam of ['email', 'appName']) {
+    if (!appInfo[reqParam]) {
+      return response.status(422).send('You must fill in required fields');
+    }
+  }
+  let token = jwt.sign({
+    appInfo
+  }, app.get('secretKey'), {expiresIn: '48h'});
+
+  response.status(201).json({token});
+});
+
+app.get('/api/v1/state_info', checkAuth, (req, res) => {
   database('state_info').select()
     .then((state_info) => {
       res.status(200).json(state_info);
