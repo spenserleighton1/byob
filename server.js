@@ -60,7 +60,7 @@ app.get('/api/v1/state_facts/:id', (req, res) => {
     });
 });
 
-app.get('/api/v1/state_info/', (req, res) => {
+app.get('/api/v1/:state_name', (req, res) => {
   database('state_info').where('state_name', req.query.state_name).select()
     .then(state => {
       if (state.length) {
