@@ -38,4 +38,36 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 * Create migration, type in terminal, `knex migrate:make initial`
 * This created a timestamped migrations directory at the root of the project
 
+## Endpoints Available
 
+### State Info
+
+* GET `/api/v1/state_info`
+* POST `/api/v1/state_info`
+* GET `/api/v1/state_info/:id`
+* PUT `/api/v1/state_info/:id`
+* DELETE `/api/v1/state_info/:id`
+  
+##### Access State Info
+
+* To RETRIEVE ALL STATE INFO (name, capital, nickname): GET `/api/v1/state_info`
+* To ADD A NEW STATE: POST `/api/v1/state_info`. You will need to pass in *state_name*, *state_nickname*, and *state_capital*
+* TO RETRIEVE A SPECIFIC STATES INFO: GET `/api/v1/state_info/:id`
+* TO UPDATE A SPECIFIC STATES INFO: PUT `/api/v1/state_info/:id`
+* TO DELETE A SPECIFIC STATE: DELETE `/api/v1/state_info/:id`
+
+### State Facts
+
+* GET `/api/v1/state_facts`
+* POST `/api/v1/state_facts`
+* GET `/api/v1/state_facts/:id`
+* PUT `/api/v1/state_facts/:id`
+* DELETE `/api/v1/state_facts/:id`
+
+#### Access State Facts
+
+* To RETRIEVE ALL STATE FACTS (name, capital, nickname): GET `/api/v1/state_facts`
+* To ADD A NEW STATE: POST `/api/v1/state_facts`. You will need to pass in *dumb_laws_1*, *dumb_laws_2*, *dumb_laws_3*, *dumb_laws_4*, *dumb_laws_5*, *worst_foods*, *weird_facts*, *weird_attractions*
+* TO RETRIEVE A SPECIFIC STATES FACTS: GET `/api/v1/state_facts/:id`
+* TO UPDATE A SPECIFIC STATES FACTS: PUT `/api/v1/state_facts/:id`
+* TO DELETE A SPECIFIC FACT: DELETE `/api/v1/state_facts/:id`
