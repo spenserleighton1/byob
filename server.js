@@ -13,11 +13,6 @@ app.use(express.static('src'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(function(request, response, next) {
-  response.setHeader('Content-Type', 'application/json');
-  next();
-});
-
 const checkAuth = (request, response, next) => {
   const { token } = request.headers;
 
