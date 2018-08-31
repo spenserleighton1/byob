@@ -13,6 +13,11 @@ app.use(express.static('src'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(function(request, response, next) {
+  response.setHeader('Content-Type', 'application/json');
+  next();
+});
+
 const checkAuth = (request, response, next) => {
   const { token } = request.headers;
 
@@ -47,8 +52,10 @@ app.post('/api/v1/jwt', (request, response) => {
       let token = jwt.sign({
       appInfo
     }, app.get('secretKey'), {expiresIn: '48h'});
-      
-    response.setHeader('Content-Type', 'application/json')
+
+    // response.setHeader('Content-Type', 'application/json')
+
+
     return response.status(201).json({token});
   } else {
     return response.status(401).send("TURING INSTRUCTORS ONLY!")
