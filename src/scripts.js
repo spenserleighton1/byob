@@ -5,7 +5,6 @@ const getToken = () => {
   const input = document.querySelector('#input');
   const email = input.value;
   const atTuring = email.split('@')[1]
-  // console.log(atTuring)
 
   if (!email) {
     document.querySelector('#display-token').innerText = 'Please fill out required fields.'
