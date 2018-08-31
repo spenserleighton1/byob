@@ -1,0 +1,61 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+}
+
+p {
+    color: #C0C0C0
+}
+
+/* Style the button used to pause/play the video */
+#btn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#input {
+    background: #ddd;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none; 
+}
+
+#display-token {
+    float: right;
+/*    position: relative;
+    bottom: 50px;
+    left: 500px;*/
+    margin-right: 100px;
+    margin-top: 30px;
+    width: 600px;
+    height: 90px;
+    word-wrap: break-word;
+}
+
+#btn:hover {
+    background: #ddd;
+    color: black;
+}
