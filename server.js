@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const checkAuth = (request, response, next) => {
   const { token } = request.headers;
-  console.log(token);
+  console.log(token)
 
   if (!token) {
     return response.status(403).json(
@@ -23,7 +23,7 @@ const checkAuth = (request, response, next) => {
   try {
     const decoded = jwt.verify(token, app.get('secretKey'));
     const validApps = ['byob'];
-
+    
     if (validApps.includes(decoded.appInfo.appName)) {
       request.decoded = decoded;
       next();
@@ -48,7 +48,7 @@ app.post('/api/v1/jwt', (request, response) => {
   response.status(201).json({token});
 });
 
-app.get('/api/v1/state_info', checkAuth, (req, res) => {
+app.get('/api/v1/state_info', (req, res) => {
   database('state_info').select()
     .then((state_info) => {
       res.status(200).json(state_info);
@@ -116,7 +116,7 @@ app.get('/api/v1/states/', (req, res) => {
     });
 });
 
-app.post('/api/v1/state_info', (req, res) => {
+app.post('/api/v1/state_info', checkAuth, (req, res) => {
   const stateInfo = req.body;
 
   for (let requiredParam of ['state_name', 'state_nickname', 'state_capital']) {
@@ -139,7 +139,7 @@ app.post('/api/v1/state_info', (req, res) => {
     });
 });
 
-app.post('/api/v1/state_facts', (req, res) => {
+app.post('/api/v1/state_facts', checkAuth, (req, res) => {
   const stateFacts = req.body;
 
   for (let requiredParam of [
@@ -176,7 +176,7 @@ app.post('/api/v1/state_facts', (req, res) => {
     });
 });
 
-app.put('/api/v1/state_info/:id', (req, res) => {
+app.put('/api/v1/state_info/:id', checkAuth, (req, res) => {
   const stateInfo = req.body;
 
   database('state_info').where('id', req.params.id).update(stateInfo, 'id')
@@ -194,7 +194,7 @@ app.put('/api/v1/state_info/:id', (req, res) => {
     });
 });
 
-app.put('/api/v1/state_facts/:id', (req, res) => {
+app.put('/api/v1/state_facts/:id', checkAuth, (req, res) => {
   const stateFacts = req.body;
 
   database('state_facts').where('id', req.params.id).update(stateFacts, 'id')
@@ -212,7 +212,7 @@ app.put('/api/v1/state_facts/:id', (req, res) => {
     });
 });
 
-app.delete('/api/v1/state_info/:id', (req, res) => {
+app.delete('/api/v1/state_info/:id', checkAuth, (req, res) => {
   database('state_facts').where('state_id', req.params.id).del()
     .then(() => database('state_info').where('id', req.params.id).del())
     .then(() => {
@@ -222,7 +222,7 @@ app.delete('/api/v1/state_info/:id', (req, res) => {
     });
 });
 
-app.delete('/api/v1/state_facts/:state_id', (req, res) => {
+app.delete('/api/v1/state_facts/:state_id', checkAuth, (req, res) => {
   database('state_facts').where('state_id', req.params.state_id).del()
     .then(() => {
       res.status(202).json({
