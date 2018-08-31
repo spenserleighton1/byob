@@ -22,7 +22,7 @@ describe('API endpoints', () => {
   beforeEachTest()
   it('should pass this test', done => {
     chai.request(server)
-      .get('/')
+      .get('/api/v1/state_info')
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.html;
