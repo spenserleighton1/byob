@@ -6,8 +6,8 @@ const chaiHttp = require('chai-http');
 const server = require('../server');
 const knex = require('../db/knex');
 
-// const token = process.env.testToken
-const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJbmZvIjp7ImFwcE5hbWUiOiJieW9iIiwiZW1haWwiOiJzcGVuc2VyQHR1cmluZy5pbyJ9LCJpYXQiOjE1MzU2NzYxMzIsImV4cCI6MTUzNTg0ODkzMn0.VTVWj-3WIKHG9lCOiSCar_dLLyxBw2O0P0BYj8KPfIg'
+const token = process.env.testToken
+// const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJbmZvIjp7ImFwcE5hbWUiOiJieW9iIiwiZW1haWwiOiJzcGVuc2VyQHR1cmluZy5pbyJ9LCJpYXQiOjE1MzU2NzYxMzIsImV4cCI6MTUzNTg0ODkzMn0.VTVWj-3WIKHG9lCOiSCar_dLLyxBw2O0P0BYj8KPfIg'
 chai.use(chaiHttp);
 
 

@@ -9,6 +9,7 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 app.set('secretKey', process.env.secretKey);
+app.use(express.static('src'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
