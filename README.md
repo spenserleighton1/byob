@@ -71,3 +71,129 @@ For information on how to do this read [this](https://postgresapp.com/documentat
 * TO RETRIEVE A SPECIFIC STATES FACTS: GET `/api/v1/state_facts/:id`
 * TO UPDATE A SPECIFIC STATES FACTS: PUT `/api/v1/state_facts/:id`
 * TO DELETE A SPECIFIC FACT: DELETE `/api/v1/state_facts/:id`
+
+### Sample Responses
+
+#### State Info
+
+* GET `/api/v1/state_info`
+* [
+    {
+        "id": 1,
+        "state_name": "Alabama",
+        "state_nickname": "Yellowhammer State",
+        "state_capital": "Montgomery",
+        "created_at": "2018-08-29T19:15:20.174Z",
+        "updated_at": "2018-08-29T19:15:20.174Z"
+    },
+    {
+        "id": 2,
+        "state_name": "Arkansas",
+        "state_nickname": "The Natural State",
+        "state_capital": "Little Rock",
+        "created_at": "2018-08-29T19:15:20.182Z",
+        "updated_at": "2018-08-29T19:15:20.182Z"
+    },
+    {
+        "id": 4,
+        "state_name": "Colorado",
+        "state_nickname": "The Centennial State",
+        "state_capital": "Denver",
+        "created_at": "2018-08-29T19:15:20.182Z",
+        "updated_at": "2018-08-29T19:15:20.182Z"
+    }...
+  ]
+
+* POST `/api/v1/state_info`
+* {
+    "id": 52
+  }
+
+* PUT `/api/v1/state_info`
+* {
+    "id": 6
+  }
+
+* DELETE `/api/v1/state_info/:id`
+* {
+    "id": "11"
+  }
+
+* GET `/api/v1/state_info/:id`
+* [
+    {
+        "id": 29,
+        "state_name": "New Hampshire  ",
+        "state_nickname": "The Granite State",
+        "state_capital": "Concord",
+        "created_at": "2018-08-29T19:15:20.197Z",
+        "updated_at": "2018-08-29T19:15:20.197Z"
+    }
+]
+
+#### State Facts
+
+* GET `/api/v1/state_facts`
+* [
+    {
+        "id": 1,
+        "dumb_laws_1": "Bear wrestling matches are prohibited.",
+        "dumb_laws_2": "Incestuous marriages are legal.",
+        "dumb_laws_3": "It is illegal to impersonate a person of the clergy.",
+        "dumb_laws_4": "It is illegal to maim oneself to escape duty.",
+        "dumb_laws_5": "You must have windshield wipers on your car.",
+        "worst_foods": "Ambrosia salad",
+        "weird_facts": " Most child smokers",
+        "weird_attractions": "Big White Shirt",
+        "state_id": 1,
+        "created_at": "2018-08-29T19:15:20.207Z",
+        "updated_at": "2018-08-29T19:15:20.207Z"
+    },
+    {
+        "id": 2,
+        "dumb_laws_1": "Hunting camels is prohibited.",
+        "dumb_laws_2": "Any misdemeanor committed while wearing a red mask is considered a felony.",
+        "dumb_laws_3": "There is a possible 25 years in prison for cutting down a cactus.",
+        "dumb_laws_4": "Donkeys cannot sleep in bathtubs.",
+        "dumb_laws_5": "A class 2 misdemeanor occurs if one places a mark upon a flag which is “likely to provoke physical retaliation”.",
+        "worst_foods": "Mesquite pods",
+        "weird_facts": " Worst at going to the dentist",
+        "weird_attractions": "Elvis Memorial Chapel",
+        "state_id": 6,
+        "created_at": "2018-08-29T19:15:20.208Z",
+        "updated_at": "2018-08-29T19:15:20.208Z"
+    }...
+  }
+
+* POST `/api/v1/state_facts`
+* {
+    "id": 52
+  }
+
+* PUT `/api/v1/state_facts`
+* {
+    "id": 6
+  }
+
+* DELETE `/api/v1/state_facts/:id`
+* {
+    "id": "11"
+  }
+
+* GET `/api/v1/state_facts/:id`
+* [
+    {
+        "id": 7,
+        "dumb_laws_1": "“R” rated movies shall not be shown at drive-in theaters.",
+        "dumb_laws_2": "It is illegal to fly over any body of water, unless one is carrying sufficient supplies of food and drink.",
+        "dumb_laws_3": "One may not lay down on the beach at night",
+        "dumb_laws_4": "Persons may not change clothes in their car",
+        "dumb_laws_5": "It is illegal to have a picnic on a highway",
+        "worst_foods": "Slippery dumplings",
+        "weird_facts": " Least regular exercise",
+        "weird_attractions": "Big Shirt",
+        "state_id": 8,
+        "created_at": "2018-08-29T19:15:20.211Z",
+        "updated_at": "2018-08-29T19:15:20.211Z"
+    }
+]
