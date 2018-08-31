@@ -48,9 +48,9 @@ app.post('/api/v1/jwt', (request, response) => {
       appInfo
     }, app.get('secretKey'), {expiresIn: '48h'});
 
-    response.status(201).json({token});
+    return response.status(201).json({token});
   } else {
-    response.status(401).send("TURING INSTRUCTORS ONLY!")
+    return response.status(401).send("TURING INSTRUCTORS ONLY!")
   }
 
 });
