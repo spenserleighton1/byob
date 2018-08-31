@@ -25,6 +25,7 @@ const getToken = () => {
     .then(results => {
       document.querySelector('#display-token').innerText = 'Jason Web Token: ' + JSON.stringify(results.token)
     })
+    .catch(err => console.log('Error:', err))
     
   }
 
