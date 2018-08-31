@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const checkAuth = (request, response, next) => {
   const { token } = request.headers;
-  console.log(token)
 
   if (!token) {
     return response.status(403).json(
@@ -41,11 +40,18 @@ app.post('/api/v1/jwt', (request, response) => {
       return response.status(422).send('You must fill in required fields');
     }
   }
-  let token = jwt.sign({
-    appInfo
-  }, app.get('secretKey'), {expiresIn: '48h'});
+  let adminEmail = appInfo.email.split('@')
 
-  response.status(201).json({token});
+  if (adminEmail[1] === 'turing.io') {
+      let token = jwt.sign({
+      appInfo
+    }, app.get('secretKey'), {expiresIn: '48h'});
+
+    response.status(201).json({token});
+  } else {
+    response.status(401).send("TURING INSTRUCTORS ONLY!")
+  }
+
 });
 
 app.get('/api/v1/state_info', (req, res) => {
@@ -75,7 +81,7 @@ app.get('/api/v1/state_info/:id', (req, res) => {
         res.status(200).json(state);
       } else {
         res.status(404).json({
-          erroror: `Could not find a state with id ${req.params.id}`
+          error: `Could not find a state with id ${req.params.id}`
         });
       }
     })
