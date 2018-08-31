@@ -1,7 +1,8 @@
 const button = document.querySelector('#btn')
 
 
-const getToken = () => {
+const getToken = (e) => {
+  e.preventDefault()
   const input = document.querySelector('#input');
   const email = input.value;
   const atTuring = email.split('@')[1]
