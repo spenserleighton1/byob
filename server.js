@@ -81,7 +81,7 @@ app.get('/api/v1/state_info/:id', (req, res) => {
         res.status(200).json(state);
       } else {
         res.status(404).json({
-          erroror: `Could not find a state with id ${req.params.id}`
+          error: `Could not find a state with id ${req.params.id}`
         });
       }
     })
