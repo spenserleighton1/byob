@@ -6,6 +6,8 @@ const chaiHttp = require('chai-http');
 const server = require('../server');
 const knex = require('../db/knex');
 
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJbmZvIjp7ImFwcE5hbWUiOiJieW9iIiwiZW1haWwiOiJzcGVuc2VyQHR1cmluZy5pbyJ9LCJpYXQiOjE1MzU2NzYxMzIsImV4cCI6MTUzNTg0ODkzMn0.VTVWj-3WIKHG9lCOiSCar_dLLyxBw2O0P0BYj8KPfIg"
+
 chai.use(chaiHttp);
 
 
@@ -66,14 +68,82 @@ describe('/api/v1/state_info', () => {
         done();
       });
   });
+
   it('should POST state_info', done => {
     chai.request(server)
-      .post('/api/v1/state_info/')
+      .post('/api/v1/state_info')
+      .set('token', token)
+      .send({ 
+        state_name: 'THIS',
+        state_nickname: 'IS',
+        state_capital: 'AWESOME'
+      })
       .end((error, response) => {
-        console.log(response)
+        response.should.have.status(201)
+        response.body.id.should.be.a('number');
+        response.body.should.be.a('object');
         done();
       });
   });
+
+  it('should throw an error if a required POST param is missing', done => {
+    chai.request(server)
+      .post('/api/v1/state_info')
+      .set('token', token)
+      .send({ 
+        state_name: 'THIS',
+        state_nickname: 'IS WRONG',
+      })
+      .end((error, response) => {
+        response.should.have.status(422)
+        response.body.error.should.equal(`Expected format: 
+        { state_name: <STRING>, 
+          state_nickname: <STRING>, 
+          state_capital: <STRING> }. 
+          You are missing a "state_capital" property.`)
+        done();
+      });
+  })
+
+  it('should update state_info with PUT', done => {
+    chai.request(server)
+      .put('/api/v1/state_info/1')
+      .set('token', token)
+      .send({ 
+        state_name: 'New state',
+      })
+      .end((error, response) => {
+        response.should.have.status(201)
+        response.body.id.should.be.a('number');
+        response.body.should.be.a('object');
+        done();
+      });
+  });
+
+  it('should throw an error if you PUT with a wrong id', done => {
+    chai.request(server)
+      .put('/api/v1/state_info/1000')
+      .set('token', token)
+      .send({ 
+        state_name: 'New state',
+      })
+      .end((error, response) => {
+        response.should.have.status(404)
+        response.body.error.should.equal(`Could not find a state with id 1000`)
+        done();
+      });
+  });
+
+  it('should remove a state from the db with the DELETE mehod', done => {
+    chai.request(server)
+      .delete('/api/v1/state_info/1')
+      .set('token', token)
+      .end((error, response) => {
+        response.should.have.status(202)
+        response.body.id.should.equal('1')
+        done();
+      }); 
+  })
 });
 
 describe('GET state_facts', () => {

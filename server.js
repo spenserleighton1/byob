@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const checkAuth = (request, response, next) => {
   const { token } = request.headers;
-  console.log(token)
 
   if (!token) {
     return response.status(403).json(
