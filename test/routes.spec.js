@@ -21,7 +21,7 @@ function beforeEachTest() {
 
 describe('/api/v1/state_info', () => {
   beforeEachTest()
-  it('shold GET all state info', done => {
+  it('shold GET all state info ', done => {
     chai.request(server)
       .get('/api/v1/state_info')
       .end((error, response) => {
