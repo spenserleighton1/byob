@@ -308,3 +308,25 @@ describe('/api/v1/state_facts', () => {
   })
 });
 
+describe('Root', () => {
+  beforeEachTest()
+  it('should display html at root', done => {
+    chai.request(server)
+      .get('/')
+      .end((error, response) => {
+        response.should.have.status(200);
+        response.should.be.html;
+        done();
+      });
+  });
+
+  it('should return 404 on sad path', done => {
+    chai.request(server)
+      .get('/404')
+      .end((error, response) => {
+        response.should.have.status(404);
+        done();
+      });
+  });
+})
+

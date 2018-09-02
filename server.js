@@ -226,8 +226,7 @@ app.delete('/api/v1/state_info/:id', checkAuth, (req, res) => {
   database('state_facts').where('state_id', req.params.id).del()
     .then(() => database('state_info').where('id', req.params.id).del())
     .then(() => {
-      res.status(202).json({
-        'id': req.params.id
+      res.status(202).json({'id': req.params.id
       });
     });
 });
@@ -246,7 +245,7 @@ app.set('port', process.env.PORT || 3000);
 app.locals.title = 'B.Y.O.B.';
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the party.');
+  res.send('Welcome to B.Y.O.B.');
 });
 
 app.listen(app.get('port'), () => {
